@@ -1,0 +1,9 @@
+@import url("../fonts/play/play.css");
+*{
+    margin: 0;
+    padding: 0;
+    border: 1;
+    font: inherit;
+    vertical-align: baseline;
+}
+
