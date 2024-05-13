@@ -6,4 +6,124 @@
     font: inherit;
     vertical-align: baseline;
 }
-
+body{
+    font-family: "Play";
+    font-size: 16px;
+    font-weight: 400;
+    color: #4A4A4A;
+}
+.site{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+.site-header{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+.site-header-content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 8px 11px;
+}
+.site-header-logo{
+    width: 100%;
+    max-width: 567px;
+}
+.site-header__img{
+    max-height: 75px;
+}
+.site-header-menu{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 535px;
+}
+.site-header-menu__link{
+    text-decoration: none;
+    color: #4a4a4a;
+}
+.site-header-action{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 558px;
+}
+.site-heder-menu-item{
+    width: max-content;
+}
+.site-main-banner{
+    width: 100%;
+    min-height: 899px;
+}
+.banner-content{
+    width: max-content;
+    padding-bottom: 60px;
+}
+.banner__item{
+    background-image: url("../img/slider.jpg");
+    min-height: inherit;
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position-y: center;
+    background-position-x: -73px;
+    background-color: rgba(0, 0 , 0, 0.1);
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: end;
+}
+.banner__title{
+    font-weight: 400;
+    font-size: 72px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.banner__subtitle{
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+}
+.banner-goods{
+    padding-top: 50px;
+    width: 100%;
+    max-width: 599px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner-goods__item{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 12px 24px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.banner-goods__item.--active{
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+}
+.site-main{
+    width: inherit;
+    min-height: 200px;
+}
+.site-footer{
+    width: inherit;
+    min-height: 200px;
+}
+@media screen {
+    .banner-goods__item:hover{
+        background-color: #fff;
+        color: #000;
+    }
+}
