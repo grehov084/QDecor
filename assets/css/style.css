@@ -8,6 +8,7 @@
 }
 :root{
     --black: rgba(17, 17, 17, 1);
+    --pb-block: 150px;
 }
 body{
     font-family: "Play";
@@ -125,7 +126,7 @@ body{
     min-height: 200px;
 }
 .site-main-about{
-    padding: 150px 0;
+    padding: var(--pb-block) 0;
 }
 .about-info-item{
     width: 100%;
@@ -150,9 +151,11 @@ body{
 .about-info-pic{
     padding-bottom: 20px;
 }
-.about-title{
-    font-size: 48px;
+.title{
     text-transform: uppercase;
+    font-size: 48px;
+}
+.about-title{
     max-width: 800px;
 }
 .about-info-text{
@@ -179,6 +182,67 @@ body{
     font-size: 24px;
     background-color: var(--black);
     transition: 0.5s;
+}
+.site-main-buy{
+    padding-bottom: var(--pb-block);
+}
+.buy-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.buy-left{
+    max-width: 960px;
+    height: 867px;
+    background-color: rgba(244, 244, 244, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 110px;
+}
+.buy__img{
+    max-height: 867pxw;
+}
+.buy-title{
+    font-size: 60px;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+}
+.buy-description{
+    font-size: 20px;
+    padding-bottom: 80px;
+}
+.reasons-title{
+    max-width: 840px;
+    padding-bottom: 40px;
+}
+.reasons-content{
+    display: flex;
+    justify-content: space-between;
+}
+.reasons-item{
+    width: 100%;
+    max-width: 410px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid var(--black);
+}
+.reasons-item-wrap{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.reasons-item-title{
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.reasons-item-description{
+    width: 100%;
+    max-width: 286px;
+    font-size: 16px;
 }
 @media screen {
     .banner-goods__item:hover{
