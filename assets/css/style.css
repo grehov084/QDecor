@@ -338,6 +338,7 @@ body{
     border-bottom: 1px solid var(--black);
     max-width: 925px;
     width: 100%;
+    min-width: 300px;
     max-height: inherit;
     min-height: 25px;
     background: rgba(244, 244, 244, 1);
